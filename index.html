@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李貫綸 | 數位商管跨領域人才</title>
+  <meta name="description" content="李貫綸 — 就讀智光商工，熱愛商業經營、電子商務與智慧科技，致力成為全方位數位商管跨領域人才。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle canvas background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Grid overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">LKL</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" id="nav-home">首頁</a></li>
+      <li><a href="#about" id="nav-about">關於我</a></li>
+      <li><a href="#skills" id="nav-skills">技能</a></li>
+      <li><a href="#vision" id="nav-vision">願景</a></li>
+      <li><a href="#contact" id="nav-contact">聯絡</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">系統運行中</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-line">// 智光商工 · 數位商管部門</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-cn glitch" data-text="李貫綸">李貫綸</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="typed-text" id="typed-output"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        商業經營 × 電子商務 × 智慧科技<br />
+        打造全方位數位商管跨領域人才
+      </p>
+      <div class="hero-cta">
+        <a href="#about" class="btn-primary" id="btn-explore">
+          <span>探索更多</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline" id="btn-contact-hero">
+          <span>聯絡我</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="4">0</span>
+          <span class="stat-label">核心課程</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">專業領域</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span>
+          <span class="stat-label">% 熱情</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-container">
+        <div class="center-orb">
+          <div class="orb-inner">
+            <span class="orb-icon">⚡</span>
+          </div>
+          <div class="orb-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+          </div>
+        </div>
+        <div class="orbit-item orbit-item-1">
+          <div class="orbit-icon">💼</div>
+          <span>商業</span>
+        </div>
+        <div class="orbit-item orbit-item-2">
+          <div class="orbit-icon">🛒</div>
+          <span>電商</span>
+        </div>
+        <div class="orbit-item orbit-item-3">
+          <div class="orbit-icon">🤖</div>
+          <span>AI</span>
+        </div>
+        <div class="orbit-item orbit-item-4">
+          <div class="orbit-icon">💻</div>
+          <span>開發</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>向下滑動</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-tag">// 01 · ABOUT</span>
+      <h2 class="section-title">關於我</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card" id="about-card-main">
+        <div class="card-glow"></div>
+        <div class="about-avatar">
+          <div class="avatar-frame">
+            <div class="avatar-inner">
+              <span class="avatar-initials">李</span>
+            </div>
+            <div class="avatar-badge">
+              <span>智光</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info">
+          <h3 class="about-name">李貫綸</h3>
+          <p class="about-school">
+            <span class="info-icon">🏫</span>智光商工
+          </p>
+          <p class="about-bio">
+            對商業經營、電子商務與智慧科技充滿熱情與好奇，
+            在智光商工的課程中努力學習各項專業技能，
+            期待自己能一步步成長為<strong>全方位的數位商管跨領域人才</strong>！
+          </p>
+          <div class="about-tags">
+            <span class="tag">🔥 商業經營</span>
+            <span class="tag">🛒 電子商務</span>
+            <span class="tag">🤖 智慧科技</span>
+            <span class="tag">💡 持續學習</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-cards-grid">
+        <div class="info-mini-card glass-card" id="card-passion">
+          <div class="mini-icon">🔥</div>
+          <h4>熱情驅動</h4>
+          <p>對新興科技與商業趨勢保持高度好奇心與學習熱情</p>
+        </div>
+        <div class="info-mini-card glass-card" id="card-goal">
+          <div class="mini-icon">🎯</div>
+          <h4>目標明確</h4>
+          <p>致力成為整合數位科技與商業管理的跨領域複合人才</p>
+        </div>
+        <div class="info-mini-card glass-card" id="card-growth">
+          <div class="mini-icon">📈</div>
+          <h4>持續成長</h4>
+          <p>每日精進，在課程中積累實力，為未來奠定堅實基礎</p>
+        </div>
+        <div class="info-mini-card glass-card" id="card-innovation">
+          <div class="mini-icon">💡</div>
+          <h4>創新思維</h4>
+          <p>結合商業邏輯與科技工具，探索數位時代無限可能</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-tag">// 02 · SKILLS</span>
+      <h2 class="section-title">核心技能</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card glass-card" id="skill-docs">
+        <div class="skill-icon-wrap">
+          <span class="skill-icon">📄</span>
+          <div class="skill-icon-glow"></div>
+        </div>
+        <h3 class="skill-name">文書處理</h3>
+        <p class="skill-desc">Word、Excel、PowerPoint 等辦公室軟體應用，提升工作效率與文件品質</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="82">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct">82%</span>
+        </div>
+        <div class="skill-tags">
+          <span>Word</span><span>Excel</span><span>PowerPoint</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass-card" id="skill-typing">
+        <div class="skill-icon-wrap">
+          <span class="skill-icon">⌨️</span>
+          <div class="skill-icon-glow"></div>
+        </div>
+        <h3 class="skill-name">打字指法</h3>
+        <p class="skill-desc">標準鍵盤指法訓練，提升輸入速度與準確率，奠定高效數位工作基礎</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="75">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-tags">
+          <span>速度</span><span>準確率</span><span>效率</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass-card" id="skill-finance">
+        <div class="skill-icon-wrap">
+          <span class="skill-icon">💰</span>
+          <div class="skill-icon-glow"></div>
+        </div>
+        <h3 class="skill-name">金融專業</h3>
+        <p class="skill-desc">財務分析、金融市場基礎知識，培養商業決策與財務管理的核心素養</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="70">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-tags">
+          <span>財務分析</span><span>金融市場</span><span>投資</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass-card" id="skill-web">
+        <div class="skill-icon-wrap">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-icon-glow"></div>
+        </div>
+        <h3 class="skill-name">網頁開發</h3>
+        <p class="skill-desc">HTML、CSS、JavaScript 網頁設計與開發，打造現代化數位產品與平台</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="68">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct">68%</span>
+        </div>
+        <div class="skill-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Domain expertise -->
+    <div class="domains-section">
+      <h3 class="domains-title">專業領域</h3>
+      <div class="domains-grid">
+        <div class="domain-item" id="domain-biz">
+          <div class="domain-hex">
+            <span>💼</span>
+          </div>
+          <div class="domain-info">
+            <h4>商業經營</h4>
+            <p>策略規劃 · 市場分析 · 營運管理</p>
+          </div>
+        </div>
+        <div class="domain-item" id="domain-ecom">
+          <div class="domain-hex">
+            <span>🛒</span>
+          </div>
+          <div class="domain-info">
+            <h4>電子商務</h4>
+            <p>數位行銷 · 平台營運 · 用戶體驗</p>
+          </div>
+        </div>
+        <div class="domain-item" id="domain-tech">
+          <div class="domain-hex">
+            <span>🤖</span>
+          </div>
+          <div class="domain-info">
+            <h4>智慧科技</h4>
+            <p>AI應用 · 數位轉型 · 科技整合</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section id="vision">
+    <div class="section-header">
+      <span class="section-tag">// 03 · VISION</span>
+      <h2 class="section-title">未來願景</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="vision-content">
+      <div class="vision-timeline">
+        <div class="timeline-item" id="tl-now">
+          <div class="tl-dot active"></div>
+          <div class="tl-card glass-card">
+            <span class="tl-tag">現在</span>
+            <h4>紮實基礎</h4>
+            <p>在智光商工努力學習文書處理、金融專業、網頁開發與打字指法，建立全面的商管技能基礎。</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="tl-near">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass-card">
+            <span class="tl-tag">近期目標</span>
+            <h4>實戰應用</h4>
+            <p>將課堂知識轉化為實際專案，嘗試建立個人電商平台，結合AI工具提升商業效率。</p>
+          </div>
+        </div>
+        <div class="timeline-item" id="tl-future">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass-card">
+            <span class="tl-tag">長遠目標</span>
+            <h4>跨域整合</h4>
+            <p>成為整合商業思維、數位技術與金融知識的全方位跨領域人才，引領數位商務新時代。</p>
+          </div>
+        </div>
+      </div>
+      <div class="vision-quote glass-card" id="vision-quote-card">
+        <div class="quote-icon">"</div>
+        <p class="quote-text">
+          期待自己能一步步成長為<br />
+          <strong>全方位的數位商管跨領域人才！</strong>
+        </p>
+        <span class="quote-author">— 李貫綸</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-tag">// 04 · CONTACT</span>
+      <h2 class="section-title">與我聯絡</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info glass-card" id="contact-info-card">
+        <div class="contact-header">
+          <div class="contact-avatar">李</div>
+          <div>
+            <h3>李貫綸</h3>
+            <p>智光商工 · 數位商管人才</p>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="contact-item" id="contact-school">
+            <span class="ci-icon">🏫</span>
+            <div>
+              <span class="ci-label">就讀學校</span>
+              <span class="ci-value">智光商工</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-major">
+            <span class="ci-icon">📚</span>
+            <div>
+              <span class="ci-label">學習方向</span>
+              <span class="ci-value">商業經營 · 電子商務 · 智慧科技</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-goal-item">
+            <span class="ci-icon">🎯</span>
+            <div>
+              <span class="ci-label">目標</span>
+              <span class="ci-value">全方位數位商管跨領域人才</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-message glass-card" id="contact-msg-card">
+        <h3 class="msg-title">發送訊息</h3>
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="msg-name">您的姓名</label>
+            <input type="text" id="msg-name" placeholder="請輸入姓名" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="msg-email">電子信箱</label>
+            <input type="email" id="msg-email" placeholder="email@example.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="msg-content">訊息內容</label>
+            <textarea id="msg-content" rows="4" placeholder="輸入您的訊息..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary submit-btn" id="submit-btn">
+            <span>發送訊息</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+        <div class="form-success" id="form-success" style="display:none;">
+          <div class="success-icon">✅</div>
+          <h4>訊息已送出！</h4>
+          <p>感謝您的聯繫，我將盡快回覆。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">LKL</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-name">李貫綸 · 數位商管跨領域人才</p>
+      <p class="footer-school">智光商工</p>
+      <div class="footer-line"></div>
+      <p class="footer-copy">© 2026 李貫綸. 保留所有權利. 以熱情與程式碼打造 ⚡</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
